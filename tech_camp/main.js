@@ -26,3 +26,9 @@ else {
   console.log(`${num}は3でも5でもありません`)
 }
 
+// 配列
+const list = ["りんご", "バナナ", "みかん"]
+console.log(list)
+console.log(list[2])
+//  みかん
+
