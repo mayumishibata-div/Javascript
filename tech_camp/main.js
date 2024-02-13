@@ -52,3 +52,26 @@ const fruit = ["りんご", "バナナ","パイナップル"]
 fruit.forEach(function(item){
   console.log(`今日の果物は${item}です`)
 })
+
+// 関数
+// function 関数名(){
+//   処理
+// }
+// （）の中は引数
+// {}の中は処理
+function say_hello (){
+  console.log("こんにちは")
+}
+
+say_hello()
+
+// 戻り値
+// returnを使わないといけない
+function calc(num1,num2) {
+  return num1*num2
+}
+
+const num1 = 2
+const num2 = 3
+
+console.log(calc(num1,num2))
