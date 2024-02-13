@@ -1,0 +1,44 @@
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 30px auto;
+  width: 600px;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.menu>li a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.menu>li a.active {
+  background-color: black;
+  color: azure;
+}
+.menu>li a:not(:active):hover {
+  opacity: 0.6;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  background-color: black;
+  color: azure;
+  min-height: 150px;
+  padding: 15px;
+  display: block;
+}
+
+

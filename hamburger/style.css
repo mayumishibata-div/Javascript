@@ -1,0 +1,57 @@
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+}
+.header h1 {
+  font-size: 20px;
+}
+
+.menu {
+  margin-left: auto;
+}
+#open, #close {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#open.hide {
+  display: none;
+}
+
+/* ハンバーガーメニュー */
+.overlay {
+  position: fixed;
+  /* 画面から見た位置で要素を固定させたい時に使用する */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 150px;
+  opacity: 0;
+  pointer-events: none;
+  /* クリックやタッチ、ホバーイベントなどを無効化することができる */
+  /* デフォルトではauto */
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+#close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+}
+
+dl {
+  margin: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+dl>div {
+  margin-bottom: 20px;
+}
+
+dt {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+dt::before {
+  content: "Q";
+  font-weight: 700;
+  color: crimson;
+}
+
+dt::after {
+  content: "＋";
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: transform 1s;
+}
+
+dl>div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  margin: 0;
+  padding: 10px;
+  display: none;
+}
+
+dd::before {
+  content: "A:";
+  font-weight: 700;
+  color: blue;
+}
+dl>div.appear dd {
+  display: block;
+}
+

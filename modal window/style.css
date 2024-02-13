@@ -1,0 +1,41 @@
+body {
+  font-size: 14px;
+}
+
+#open, #close {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+#modal {
+  width: 300px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  top:40;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
+  transition: transform0.4;
+}
+
+#mask {
+  background: #5e5757;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -500px);
+}
