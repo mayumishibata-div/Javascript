@@ -213,3 +213,12 @@ console.log(calc(num1,num2))
         addEventListener()
           // ：イベントを発火させる時に実行する関数を定義するメソッド
         // 要素.addEventListener("イベント名", 関数)
+
+  // スタイルを操作する
+    // インラインスタイル：HTMLの開始タグに直接cssのコードを記述する方法
+      // setAttribute-新しい属性を追加
+      const pullDownButton = document.getElementById("lists")
+      pullDownButton.setAttribute("style", "background-color: blue;")
+
+      // removeAttribute-属性を削除
+      pullDownButton.removeAttribute("style")
