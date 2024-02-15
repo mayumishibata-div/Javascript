@@ -196,4 +196,8 @@ console.log(calc(num1,num2))
           document.querySelector("セレクタ名")
           // (引数で指定したセレクタに合致する要素のうち一番最初に見つかった要素1つを取得)
 
-
+  // 戻り値について
+    // getElementsByClassName：HTMLCollection
+    // querySelectorAll：NodeList
+    // ＝使えるメソッドが違う
+    // ※forEach関数を使用する場合はquerySelectorAll：NodeListが戻り値のものを使う必要がある
