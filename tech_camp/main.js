@@ -243,3 +243,24 @@ console.log(calc(num1,num2))
           // pullDownListsのstyle属性にdisplay:block;が指定されていない場合（つまり非表示の時）実行される
           pullDownLists.setAttribute("style", "display:block;")
         }
+
+    // イベント発火元となった要素を取得
+      // 関数の中で
+      // this
+      // を使うとイベント発火元となった要素を取得することができる
+
+      const pullDownButtons = document.getElementById("lists")
+      const pullDownList = document.getElementById("pull-down")
+
+      pullDownButtons.addEventListener('mouseover', function(){
+        this.setAttribute("style", "background-color:#FFBEDA;")
+      })
+
+      pullDownButtons.addEventListener('mouseout', function(){
+        this.removeAttribute("style")
+      })
+
+      pullDownButtons.addEventListener('click', function() {
+        pullDownList.setAttribute("style", "display:block;")
+  })
+
