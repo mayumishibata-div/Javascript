@@ -201,3 +201,15 @@ console.log(calc(num1,num2))
     // querySelectorAll：NodeList
     // ＝使えるメソッドが違う
     // ※forEach関数を使用する場合はquerySelectorAll：NodeListが戻り値のものを使う必要がある
+
+
+  // JavaScriptのコードを実行する仕組み
+      // 何かが起きたらコードを実行する
+      // 何かが起きたら＝イベント
+          // loadイベント：ページ全体が全て読み込まれたら
+          // clickイベント：意定された要素がクリックされたら
+          // mouseoverイベント：指定された要素にカーソルを乗せたら
+          // mouseoutイベント：指定された要素からカーソルを離したら
+        addEventListener()
+          // ：イベントを発火させる時に実行する関数を定義するメソッド
+        // 要素.addEventListener("イベント名", 関数)
