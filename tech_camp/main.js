@@ -216,9 +216,30 @@ console.log(calc(num1,num2))
 
   // スタイルを操作する
     // インラインスタイル：HTMLの開始タグに直接cssのコードを記述する方法
+
       // setAttribute-新しい属性を追加
       const pullDownButton = document.getElementById("lists")
       pullDownButton.setAttribute("style", "background-color: blue;")
 
       // removeAttribute-属性を削除
       pullDownButton.removeAttribute("style")
+
+  // プルダウンメニュー
+  表示するメニューの中身はHTMLで記述
+    // 初めから画面に表示されてしまう
+      // →cssでdisplay:none;で見えないように
+    // 非表示 → 表示させる
+      // setAttributeを使ってdisplay:none → display:blockに
+
+    // 表示 → 非表示
+      // display:blockが指定されているかどうかで条件分岐
+      // → 付与されているインラインスタイルの状態を取得する必要がある
+        // getAttribute-要素上の指定した属性の値を戻り値で返してくれる
+
+        if (pullDownLists.getAttribute("style") == "display:block;") {
+          // pullDownListsのstyle属性にdisplay:block;が指定されている場合（つまり表示されている時）実行される
+          pullDownLists.removeAttribute("style")
+        } else {
+          // pullDownListsのstyle属性にdisplay:block;が指定されていない場合（つまり非表示の時）実行される
+          pullDownLists.setAttribute("style", "display:block;")
+        }

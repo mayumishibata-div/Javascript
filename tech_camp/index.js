@@ -1,4 +1,5 @@
 const pullDownButton = document.getElementById("lists")
+const pullDownLists = document.getElementById("pull-down")
 // console.log(pullDownButton)
 
 pullDownButton.addEventListener("mouseover",function(){
@@ -12,5 +13,9 @@ pullDownButton.addEventListener("mouseout", function(){
 })
 
 pullDownButton.addEventListener("click", function(){
-  console.log("Click OKOK")
+  if (pullDownLists.getAttribute("style") == "display: block"){
+  pullDownLists.removeAttribute("style")
+  } else {
+  pullDownLists.setAttribute("style", "display: block")
+  }
 })
