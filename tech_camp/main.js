@@ -150,3 +150,50 @@ console.log(calc(num1,num2))
         let hour5 = 4
         
         effort(subject5, hour5)
+
+// オブジェクトの生成
+    // データや処理を一つにまとめたもの
+        // データ：キーとバリューのセット＝プロパティ
+        let human = {
+          name: "mayumi",
+          age: 25,
+          gender: "woman"
+          
+        }
+        human["address"] = "Osaka"
+        console.log(human.name)
+        console.log(human.address)
+// メソッド
+  // プロパティに紐づけられた処理のこと
+  // 関数を用いて『〇〇してほしい』とかく
+  let man = {
+    name: "mayumi",
+    age: 25,
+    gender: "woman",
+    address: "Osaka",
+    talk:function(){
+      console.log(`私の名前は${man.name}です。年齢は${man.age}歳です。住所は${man.address}に住んでいます`)
+    }
+  }
+  man.talk()
+
+  // windowオブジェクト
+  window.alert("ウインドウオブジェクトに成功")
+  // 省略することもできる
+  alert("省略して実行")
+
+  // documentオブジェクト
+  // ブラウザ上で表示された情報（HTML）を操作することができる
+      // DOMツリーからHTMLを取得する
+      // <idから取得>
+          document.getElementById("id名")
+      // <class名から取得>
+          document.getElementsByClassName("class名")
+      //    （複数形になっているので注意）
+      // <セレクタから取得>
+          document.querySelectorAll("セレクタ名")
+          // (引数で指定したセレクタに合致するものをすべて取得)
+          document.querySelector("セレクタ名")
+          // (引数で指定したセレクタに合致する要素のうち一番最初に見つかった要素1つを取得)
+
+
