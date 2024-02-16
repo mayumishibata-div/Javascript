@@ -1,5 +1,7 @@
 const pullDownButton = document.getElementById("lists")
 const pullDownLists = document.getElementById("pull-down")
+const pullDown = document.querySelectorAll(".pull-down-list")
+console.log(pullDown)
 // console.log(pullDownButton)
 
 pullDownButton.addEventListener("mouseover",function(){
@@ -18,4 +20,10 @@ pullDownButton.addEventListener("click", function(){
   } else {
   pullDownLists.setAttribute("style", "display: block")
   }
+})
+
+pullDown.forEach(function(list){
+  list.addEventListener("click", function(){
+    console.log(list)
+  })
 })

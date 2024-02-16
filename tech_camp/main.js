@@ -264,3 +264,7 @@ console.log(calc(num1,num2))
         pullDownList.setAttribute("style", "display:block;")
   })
 
+  // 選択した文字列を取得
+  // 複数のリストのHTML要素を取得
+  //   → classをつける
+  //   → forEach関数を使って配列の要素を表示
