@@ -268,3 +268,16 @@ console.log(calc(num1,num2))
   // 複数のリストのHTML要素を取得
   //   → classをつける
   //   → forEach関数を使って配列の要素を表示
+
+
+  // HTML要素の書き換え
+  //  innerHTMLプロパティ
+  html
+  // <div class="content" id="apple">りんご</div>
+
+  const apple = document.getElementById("apple")
+  console.log(apple.innerHTML)
+  // =>りんご
+  apple.innerHTML = "青リンゴ"
+  console.log(apple.innerHTML)
+  // =>青リンゴ
