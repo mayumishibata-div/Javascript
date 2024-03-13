@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding-top: 116px;
+  color: #333333;
+}
+
+h1 {
+  font-size: 3.0rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.0rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+a:hover {
+  transition: 0.5s;
+}
+
+section {
+  max-width: 1240px;
+}
+
+section {
+  padding: 80px 20px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 40px;
+  text-align: center;
+
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 116px;
+  inset: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.header-wrapper {
+  max-width: 1240px;
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+}
+
+
+
+.hamburger-menu {
+  position: relative;
+  width: 64px;
+  height: 41px;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.hamburger-menu span:nth-of-type(1) {
+  top: 0
+}
+
+.hamburger-menu span:nth-of-type(2) {
+  top: 50%
+}
+
+.hamburger-menu span:nth-of-type(3) {
+  bottom: 0;
+}
+
+
+.header-nav {
+  display: none;
+}
+
+/* kv  */
+.kv {
+  width: 100%;
+}
+
+.kv video {
+  width: 100%;
+}
+
+/* pick up  */
+.pic-up-img {
+  display: flex;
+}
+
+.pic-up-img img {
+  width: 280px;
+  margin-right: 60px;
+}
+
+/* feature */
+
+.feature-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px calc((100% - 96%) / 2);
+}
+
+.feature-content {
+  width: 32%;
+  box-shadow: #00000029 0 3px 6px;
+}
+
+.feature-content h3 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  padding: 30px 0 17px 40px;
+}
+
+.feature-content p {
+  padding: 0 40px 100px;
+}
+
+/* contact  */
+
+.contact {
+  max-width: 100%;
+  background-color: #2B2B2B;
+  color: #fff;
+}
+
+.contact-wrapper {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.contact-inner{
+  max-width: 1077px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-text h3 {
+  font-size: 2.0rem;
+}
+
+.contact-text p {
+  margin-top: 45px;
+}
+
+.contact-form button {
+  width: 226px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border: solid 1px #fff;
+}
+
+/* フォーム */
+.contact-form {
+  width: 40%;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  background-color: #fff;
+  margin: 5px 0 20px;
+}
+
+.contact-form input {
+  height: 45px;
+}
+
+.footer {
+  background-color: #2b2b2b;
+  padding: 0 0 20px 0;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+

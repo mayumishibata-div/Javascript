@@ -12,39 +12,48 @@
   <link rel="shortcut icon" href="./img/">
 </head>
 <body>
-  <header>
-    <h1 class="header-title">
-      <a href="">SHOES</a>
-    </h1>
-    <div class="hamburger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+  <header class="header">
+    <div class="header-wrapper">
+      <h1 class="header-title">
+        <a href="">SHOES</a>
+      </h1>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="">Pick Up</a>
+          </li>
+          <li>
+            <a href="">Feature</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header-nav">
-      <ul>
-        <li>
-          <a href="">Pick Up</a>
-        </li>
-        <li>
-          <a href="">Feature</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <div class="kv">
-      <img src="./movie/top.mp4" alt="">
+      <video autoplay loop muted src="./movie/top.mp4">
+        <p>ブラウザに対応していないため、動画を再生できません。</p>
+      </video>
     </div>
     
     <section class="pick-up">
       <h2 class="section-title">Pick Up</h2>
       <div class="pic-up-img">
-      
+        <img src="./img/shoes.png" alt="">
+        <img src="./img/shoes2.png" alt="">
+        <img src="./img/shoes3.png" alt="">
+        <img src="./img/shoes4.png" alt="">
+        <img src="./img/shoes5.png" alt="">
+        <img src="./img/shoes6.png" alt="">
       </div>
     </section>
 
@@ -52,32 +61,32 @@
       <h2 class="section-title">Feature</h2>
       <div class="feature-wrapper">
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes2.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes3.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes4.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes5.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="feature-content">
-          <img src="" alt="">
+          <img src="./img/shoes6.png" alt="">
           <h3>category</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
@@ -85,20 +94,33 @@
     </section>
 
     <section class="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-container">
-        <div class="contact-wrapper">
-          <h3>サブタイトル</h3>
-          <div class="contact-text">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト</p>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト</p>
+      <div class="contact-wrapper">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-inner">
+          <div class="contact-content">
+            <h3>サブタイトル</h3>
+            <div class="contact-text">
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト</p>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキスト</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <button type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <small>
       &copy;Shoes
     </small>
