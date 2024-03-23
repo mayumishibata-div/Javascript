@@ -182,8 +182,18 @@ section {
 
 .feature-content {
   width: 32%;
+  /* height: 451px; */
   box-shadow: #00000029 0 3px 6px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.5s;
 }
+
+.feature-content.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 .feature-content h3 {
   font-size: 1.8rem;
