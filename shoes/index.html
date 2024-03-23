@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHOES</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./img/">
 </head>
@@ -17,12 +20,12 @@
       <h1 class="header-title">
         <a href="">SHOES</a>
       </h1>
-      <button class="hamburger-menu hamburger active" id="js-hamburger">
+      <button class="hamburger-menu hamburger" id="js-hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="header-nav active" id="js-nav">
+      <nav class="header-nav" id="js-nav">
         <ul>
           <li>
             <a href="">Pick Up</a>
@@ -47,14 +50,23 @@
     
     <section class="pick-up">
       <h2 class="section-title">Pick Up</h2>
-      <div class="pic-up-img">
-        <img src="./img/shoes.png" alt="">
-        <img src="./img/shoes2.png" alt="">
-        <img src="./img/shoes3.png" alt="">
-        <img src="./img/shoes4.png" alt="">
-        <img src="./img/shoes5.png" alt="">
-        <img src="./img/shoes6.png" alt="">
-      </div>
+      <!-- <div class="pic-up-img"> -->
+        <!-- スライド -->
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./img/shoes.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/shoes2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/shoes3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/shoes4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/shoes5.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/shoes6.png" alt=""></div>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- スライド -->
     </section>
 
     <section class="feature">
@@ -125,6 +137,7 @@
       &copy;Shoes
     </small>
   </footer>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

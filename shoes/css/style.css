@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  overflow: auto;
 }
 
 body {
@@ -161,13 +162,14 @@ section {
 }
 
 /* pick up  */
-.pic-up-img {
-  display: flex;
+
+.mySwiper {
+  overflow: unset;
 }
 
-.pic-up-img img {
-  width: 280px;
-  margin-right: 60px;
+
+.swiper-slide img {
+  width: 100%;
 }
 
 /* feature */
