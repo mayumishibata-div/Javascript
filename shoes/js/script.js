@@ -39,5 +39,37 @@ let targetTop = item[i].offsetTop;
   }
 });
 
+// スムーススクロール
+// ヘッダーの高さを取得
+const headerHeight = document.querySelector("header").offsetHeight;
+const anchors = document.querySelectorAll("a[href^='#']");
+
+for(let i = 0; i < anchors.length; i++){
+  anchors[i].addEventListener("click", function(event){
+    // デフォルトのクリックイベントの無効化
+    event.preventDefault();
+
+    const href = this.getAttribute("href"); // `this` を使用して修正
+    if (href !== "#top" && href !== "") { // 空のhrefも同様に処理
+      // スクロール先の要素を取得
+      const target = document.getElementById(href.replace("#", ""));
+      
+      // スクロール先の要素の位置を取得、headerの高さをマイナス
+      const position = window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
+      
+      // スクロールアニメーション
+      window.scroll({
+        top: position,
+        behavior: 'smooth'
+      });
+    }else{
+      // トップに戻る
+      window.scroll({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+}
 
 
