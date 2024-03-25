@@ -68,6 +68,23 @@ section {
   margin:0 auto;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  z-index: 1; /* メニューより後ろに表示 */
+}
+
+.overlay.active {
+  display: block;
+  transform: translateX(0);
+}
+
 .hamburger-menu {
   position: relative;
   width: 64px;

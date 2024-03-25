@@ -1,11 +1,13 @@
 
 const ham = document.querySelector("#js-hamburger")
 const nav = document.querySelector("#js-nav")
+const overlay = document.querySelector(".overlay")
 
 ham.addEventListener("click",function(){
   ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
   nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
-})
+  overlay.classList.toggle('active'); // ナビゲーションメ
+});
 
 // スライダー
 const swiper = new Swiper(".mySwiper",{
