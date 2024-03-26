@@ -1,4 +1,37 @@
 body {
   font-family: "しっぽり明朝", serif;
-    font-family: "EB Garamond", serif
+  color: #333333;
+  font-weight: 500;
+}
+/* グローバル変数 */
+:root{
+  --en: "EB Garamond", serif;
+  --sixTeen: 16px;
+  --twentyFive: 25px;
+  --forty: 40px;
+}
+
+p {
+  font-size: var(--sixTeen);
+  line-height: 200%;
+}
+
+a {
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+/* ヘッダー  */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--twentyFive) 0 0 var(--forty);
+  z-index: 1000;
 }
