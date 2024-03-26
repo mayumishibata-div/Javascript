@@ -1,14 +1,18 @@
 body {
   font-family: "しっぽり明朝", serif;
-  color: #333333;
+  color: var(--black);
   font-weight: 500;
 }
 /* グローバル変数 */
 :root{
+  --black: #333333;
   --en: "EB Garamond", serif;
   --sixTeen: 16px;
   --twentyFive: 25px;
   --forty: 40px;
+  --thirtyTwo: 32px;
+  --eighty-one: 81px
+
 }
 
 p {
@@ -35,3 +39,52 @@ header {
   padding: var(--twentyFive) 0 0 var(--forty);
   z-index: 1000;
 }
+/* ハンバーガーメニュー */
+.hamburger-btn {
+  width: var(--thirtyTwo);
+  height: var(--twentyFive);
+  position: relative;
+  z-index: 10;
+}
+
+.hamburger-btn span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+}
+
+/* （三本線） */
+.hamburger-btn span:nth-of-type(1) {
+  top: 0;
+}
+
+.hamburger-btn span:nth-of-type(2) {
+  top: 50%;
+}
+
+.hamburger-btn span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  text-align: center;
+  padding: var(--eighty-one) 0 0 0;
+}
+
+.header-menu li {
+  margin: var(--thirtyTwo);
+}
+
+.header-menu li a {
+  font-weight: 500;
+  font-family: var(--en);
+}
+
+
