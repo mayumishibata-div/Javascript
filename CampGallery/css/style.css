@@ -15,8 +15,9 @@ body {
   --en: "EB Garamond", serif;
   --sixTeen: 16px;
   --twentyFive: 25px;
-  --forty: 40px;
+  --thirty: 30px;
   --thirtyTwo: 32px;
+  --forty: 40px;
   --eighty-one: 81px
 
 }
@@ -118,3 +119,35 @@ header {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+/* kv  */
+.kv {
+  background-image: url(../img/kv.jpg);
+  width: 100vw;
+  height: 47vw; /* 1vhはviewportの高さの1% */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.kv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 116px;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.kv h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #FFFFFF;
+  text-align: center;
+  line-height: 300px;
+  font-size: var(--thirty);
+  font-family: var(--en);
+  z-index: 100;
+}
