@@ -18,7 +18,9 @@ body {
   --thirty: 30px;
   --thirtyTwo: 32px;
   --forty: 40px;
-  --eighty-one: 81px
+  --eighty-one: 81px;
+  --twenty-four: 24px;
+  --one-hundred: 100px;
 
 }
 
@@ -36,7 +38,23 @@ a:hover {
 }
 
 h1, h2 {
+  font-size: var(--twenty-four);
   font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-family: var(--en);
+}
+section {
+padding: var(--one-hundred) 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 /* ヘッダー  */
 header {
@@ -150,4 +168,20 @@ header {
   font-size: var(--thirty);
   font-family: var(--en);
   z-index: 100;
+}
+
+/* about */
+.about-container {
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+}
+
+.about-content {
+  width: 500px;
+}
+
+.about-container img {
+  width: 550px;
+  box-shadow: 0 3px 6px #00000052;
 }
