@@ -14,14 +14,16 @@ body {
   --black: #333333;
   --en: "EB Garamond", serif;
   --sixTeen: 16px;
+  --twenty: 20px;
+  --twenty-four: 24px;
   --twentyFive: 25px;
   --thirty: 30px;
   --thirtyTwo: 32px;
   --forty: 40px;
+  --sixty: 60px;
+  --eighty: 80px;
   --eighty-one: 81px;
-  --twenty-four: 24px;
   --one-hundred: 100px;
-
 }
 
 p {
@@ -184,4 +186,41 @@ justify-content: space-between;
 .about-container img {
   width: 550px;
   box-shadow: 0 3px 6px #00000052;
+}
+
+/* gallery  */
+.gallery-container{
+  background-color: #F4F1F1;
+  padding: var(--one-hundred) 0 180px;
+}
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sixty) calc((100% - 96%) / 2);
+  
+}
+
+.gallery-content{
+  width: 32%;
+  position: relative;
+}
+.gallery-content:nth-of-type(3n) {/*1の時3、2の時6*/
+  top: var(--eighty);
+}
+
+.gallery-content:nth-of-type(3n-1) {/*1の時3-1、2の時6-1*/
+  top: var(--forty);
+}
+
+.gallery-content img {
+  width: 100%;
+  height: 237px; /*SEO対策のため*/
+  box-shadow: 0 6px 6px #0000009A;
+}
+
+.gallery-content p {
+  text-align: center;
+  margin-top: var(--thirty);
+  font-size: var(--twenty-four);
+  font-family: var(--en);
 }
