@@ -41,5 +41,9 @@ const modalClose = document.querySelectorAll(".close")
 
 // スライダー
 var swiper = new Swiper(".mySwiper", {
-  
+  // ナビゲーション
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
