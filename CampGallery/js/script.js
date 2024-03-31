@@ -38,3 +38,8 @@ const modalClose = document.querySelectorAll(".close")
       modal.style.display="none"
   }
 })
+
+// スライダー
+var swiper = new Swiper(".mySwiper", {
+  
+});

@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" クロスオリジン> 
   <link href="https: //fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=七ポリ+明朝&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -176,7 +178,56 @@
         </div>
       </div>
     </div>
+
+    <section class="blog" id="blog">
+      <div class="container blog-container">
+        <h2>Blog</h2>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./img/slide.jpg" alt="">
+                <p>ブログタイトル</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./img/slide2.jpg" alt="">
+                <p>ブログタイトル</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./img/slide3.jpg" alt="">
+                <p>ブログタイトル</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./img/slide4.jpg" alt="">
+                <p>ブログタイトル</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./img/slide5.jpg" alt="">
+                <p>ブログタイトル</p>
+              </a>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="button-wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
