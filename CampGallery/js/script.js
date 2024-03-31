@@ -46,4 +46,16 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  // Slides per view
+  // （スマホ用）
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  // ブレイクポイント650以上の時
+  breakpoints: {
+    650: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  }
 });
