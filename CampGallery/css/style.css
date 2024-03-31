@@ -15,11 +15,12 @@ body {
   --en: "EB Garamond", serif;
   --sixTeen: 16px;
   --twenty: 20px;
-  --twenty-four: 24px;
+  --twentyFour: 24px;
   --twentyFive: 25px;
   --thirty: 30px;
   --thirtyTwo: 32px;
   --forty: 40px;
+  --fortyFive: 45px;
   --sixty: 60px;
   --eighty: 80px;
   --eighty-one: 81px;
@@ -40,7 +41,7 @@ a:hover {
 }
 
 h1, h2 {
-  font-size: var(--twenty-four);
+  font-size: var(--twentyFour);
   font-weight: bold;
 }
 
@@ -222,7 +223,7 @@ justify-content: space-between;
 .gallery-content p {
   text-align: center;
   margin-top: var(--thirty);
-  font-size: var(--twenty-four);
+  font-size: var(--twentyFour);
   font-family: var(--en);
 }
 
@@ -288,6 +289,52 @@ justify-content: space-between;
 .modal-btn>div>span:last-of-type {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+/* Blog */
+.swiper-slide p {
+  text-align: center;
+  margin-top: var(--twenty);
+  font-size: var(--twenty);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 237px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  /* 元々のCSSを消去させるために */
+  position: static; /*position:absolute;がついている*/
+  width: auto;
+  height: auto;
+  margin-top: auto;
+}
+
+.button-wrapper {
+  margin-top: var(--twenty);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 var(--twenty);
+  
+}
+
+.swiper-button-prev:after, 
+.swiper-button-next:after {
+  content: "";
+  width: var(--fortyFive);
+  height: var(--fortyFive);
+  background-size: 100% 100%;
+}
+
+.swiper-button-prev:after {
+  background-image: url(../img/prev.svg);
+}
+
+.swiper-button-next:after {
+  background-image: url(../img/next.svg);
+}
+
 
 
 
