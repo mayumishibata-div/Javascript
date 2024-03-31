@@ -12,3 +12,16 @@ ham.addEventListener("click", function(){
   menu.classList.toggle("active")
 })
 
+// モーダル
+// モーダルオープン
+const modalOpen = document.querySelectorAll(".gallery-content");
+// モーダルオープンの引数をコールバック関数の引数をbuttonに設定
+  modalOpen.forEach(function(button){
+  //buttonをクリックしたとき
+    button.onclick = function(){
+      //data-modalの値を取得
+      const modal = button.getAttribute("data-modal");
+      // data-modalと同じIDの値を開く
+      document.getElementById(modal).style.display="block"
+    }
+  });
