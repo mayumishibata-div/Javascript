@@ -25,3 +25,16 @@ const modalOpen = document.querySelectorAll(".gallery-content");
       document.getElementById(modal).style.display="block"
     }
   });
+
+// モーダルクローズ
+const modalClose = document.querySelectorAll(".close")
+// モーダルクローズの引数をコールバック関数の引数をbuttonに設定  
+  modalClose.forEach(function(button){
+  // closeをクリックしたとき
+    button.onclick = function(){
+      // 祖先の要素.modalを取得
+      const modal = button.closest(".modal");
+      // modalを非表示
+      modal.style.display="none"
+  }
+})
