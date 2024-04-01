@@ -109,6 +109,7 @@ header {
   /* 見えないように左に寄せておく */
   transform: translateX(-100vw);
   transition: 0.5s;
+  background-color: #fff;
 }
 
 .header-menu.active {
