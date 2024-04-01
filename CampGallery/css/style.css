@@ -13,6 +13,7 @@ body {
 :root{
   --black: #333333;
   --en: "EB Garamond", serif;
+  --twelve: 12px;
   --sixTeen: 16px;
   --twenty: 20px;
   --twentyFour: 24px;
@@ -316,7 +317,6 @@ justify-content: space-between;
   justify-content: flex-end;
   align-items: center;
   gap: 0 var(--twenty);
-  
 }
 
 .swiper-button-prev:after, 
@@ -335,6 +335,26 @@ justify-content: space-between;
   background-image: url(../img/next.svg);
 }
 
+/* footer  */
 
+.footer {
+  padding: var(--forty) 0 0;
+  border-top: 1px solid #707070;
+  font-style: var(--en);
+}
+.footer h2 {
+  font-size: var(--twenty);
+}
 
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--forty);
+}
 
+.copy {
+  display: block;
+  text-align: center;
+  margin: var(--forty) auto;
+  font-size: var(--twelve);
+}
