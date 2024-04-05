@@ -24,8 +24,8 @@ body {
   --fortyFive: 45px;
   --sixty: 60px;
   --eighty: 80px;
-  --eighty-one: 81px;
-  --one-hundred: 100px;
+  --eightyOne: 81px;
+  --oneHundred: 100px;
 }
 
 p {
@@ -52,7 +52,7 @@ h2 {
   font-family: var(--en);
 }
 section {
-padding: var(--one-hundred) 0;
+padding: var(--oneHundred) 0;
 }
 
 .container {
@@ -105,7 +105,7 @@ header {
   width: 300px;
   height: 100vh;
   text-align: center;
-  padding: var(--eighty-one) 0 0 0;
+  padding: var(--eightyOne) 0 0 0;
   /* 見えないように左に寄せておく */
   transform: translateX(-100vw);
   transition: 0.5s;
@@ -194,7 +194,7 @@ justify-content: space-between;
 /* gallery  */
 .gallery {
   background-color: #F4F1F1;
-  padding: var(--one-hundred) 0 180px;
+  padding: var(--oneHundred) 0 180px;
 }
 .gallery-wrapper {
   display: flex;
