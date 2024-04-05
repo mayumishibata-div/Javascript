@@ -26,6 +26,7 @@ body {
   --eighty: 80px;
   --eightyOne: 81px;
   --oneHundred: 100px;
+  --fadeAnimation: fade .5s forwards
 }
 
 p {
@@ -60,6 +61,19 @@ padding: var(--oneHundred) 0;
   padding: 0 20px;
   margin: 0 auto;
 }
+
+/* アニメーション */
+@keyframes fade {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ヘッダー  */
 header {
   position: fixed;
@@ -176,6 +190,14 @@ header {
 }
 
 /* about */
+.about {
+  opacity: 0;
+}
+
+.about.show {
+  animation: var(--fadeAnimation);
+}
+
 .about-container {
   display: flex;
   align-items: center;
@@ -196,11 +218,18 @@ justify-content: space-between;
   background-color: #F4F1F1;
   padding: var(--oneHundred) 0 180px;
 }
+
+.gallery h2 {
+  opacity: 0;
+}
+
+.gallery.show h2 {
+  animation: var(--fadeAnimation);
+}
 .gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: var(--sixty) calc((100% - 96%) / 2);
-  
 }
 
 .gallery-content{
@@ -208,6 +237,39 @@ justify-content: space-between;
   position: relative;
   cursor: pointer;
 }
+
+.gallery-content {
+  opacity: 0;
+}
+
+.gallery-content.show {
+  animation: var(--fadeAnimation);
+}
+
+.gallery-content.show:first-of-type {
+  animation-delay: 0s;
+}
+
+.gallery-content.show:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.gallery-content.show:nth-of-type(3) {
+  animation-delay: .8s;
+}
+
+.gallery-content.show:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+
+.gallery-content.show:nth-of-type(5) {
+  animation-delay: 1.6s;
+}
+
+.gallery-content.show:nth-of-type(6) {
+  animation-delay: 2s;
+}
+
 .gallery-content:nth-of-type(3n) {/*1の時3、2の時6*/
   top: var(--eighty);
 }
@@ -220,6 +282,11 @@ justify-content: space-between;
   width: 100%;
   height: 237px; /*SEO対策のため*/
   box-shadow: 0 6px 6px #0000009A;
+  transition: .5s;
+}
+
+.gallery-content.show:hover img {
+  box-shadow: none;
 }
 
 .gallery-content p {
