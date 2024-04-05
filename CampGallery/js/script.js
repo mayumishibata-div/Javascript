@@ -59,3 +59,31 @@ var swiper = new Swiper(".mySwiper", {
     },
   }
 });
+
+// スムーススクロール
+  // aタグの＃を取得
+  const anchors = document.querySelectorAll("a[href^='#']");
+  // header の高さを取得
+  const headerHeight = document.querySelector("header").offsetHeight;
+  // アンカー取得
+  const urlHash = location.href; 
+  
+    for(let i = 0; i < anchors.length; i++){
+      anchors[i].addEventListener("click",function(event){
+        event.preventDefault();
+        // anchorsのhrefの値を取得
+        const href = anchors[i].getAttribute("href");
+
+        // スクロール先の要素を取得
+        const target = document.getElementById(href.replace("#", ""));
+
+        // スクロールする位置
+        const position = window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
+
+        // アニメーションの動き
+        window.scroll({
+          top: position,
+          behavior: "smooth"
+        });
+      });
+    }
