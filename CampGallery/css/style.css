@@ -58,7 +58,7 @@ padding: var(--oneHundred) 0;
 
 .container {
   max-width: 1140px;
-  padding: 0 20px;
+  padding: 0 var(--twenty);
   margin: 0 auto;
 }
 
@@ -210,6 +210,7 @@ justify-content: space-between;
 
 .about-container img {
   width: 550px;
+  height: 357px;
   box-shadow: 0 3px 6px #00000052;
 }
 
@@ -425,4 +426,67 @@ justify-content: space-between;
   text-align: center;
   margin: var(--forty) auto;
   font-size: var(--twelve);
+}
+
+/* タブレット版 */
+@media screen  and (max-width: 1100px){
+  /* 100 ➗ 基準値 （100/1100=0.091vw）*/
+
+  :root{
+    --twelve: calc(12 * 0.091vw);
+    --sixTeen: calc(16 * 0.091vw);
+    --twenty: calc(20 * 0.091vw);
+    --twentyFour: calc(24 * 0.091vw);
+    --twentyFive: calc(25 * 0.091vw);
+    --thirty: calc(30 * 0.091vw);
+    --thirtyTwo: calc(32 * 0.091vw);
+    --forty: calc(40 * 0.091vw);
+    --fortyFive: calc(45 * 0.091vw);
+    --sixty: calc(60 * 0.091vw);
+    --eighty: calc(80 * 0.091vw);
+    --eightyOne: calc(81 * 0.091vw);;
+    --oneHundred: calc(100 * 0.091vw);
+    --fadeAnimation: fade .5s forwards
+  }
+    /* ヘッダー */
+    .header-menu {
+      width: calc(300 * 0.091vw);
+    }
+
+    /* kv */
+    .kv h1 {
+      width: calc(300 * 0.091vw);
+      height: calc(300 * 0.091vw);
+      line-height: calc(300 * 0.091vw);
+    }
+
+    .kv::after {
+      width: calc(116 * 0.091vw);
+    }
+
+    /* about */
+    .about-content {
+      width: calc(500 * 0.091vw);
+    }
+
+    .about-container img {
+      width: calc(550 * 0.091vw);
+      height: calc(357 * 0.091vw);
+    }
+
+    /* gallery  */
+    .gallery {
+      padding: var(--oneHundred) 0 calc(180 * 0.091vw);
+    }
+
+    .gallery-content img {
+      height: calc(237 * 0.091vw);
+    }
+
+    /* blog  */
+
+    .swiper-slide img {
+      height: calc(237 * 0.091vw);
+  }
+
 }
