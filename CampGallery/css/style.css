@@ -483,10 +483,140 @@ justify-content: space-between;
       height: calc(237 * 0.091vw);
     }
 
+    /* modal  */
+    .modal-content img {
+      width: calc(723 * 0.091vw);
+      height: calc(487 * 0.091vw);
+    }
     /* blog  */
 
     .swiper-slide img {
       height: calc(237 * 0.091vw);
+  }
+
+}
+
+/* スマホ版 */
+@media screen  and (max-width: 650px){
+  /* 100 ÷ 基準値 100 / 375 = 0.2666vw */
+
+  :root{
+    --twelve: calc(12 * 0.2666vw);
+    --sixTeen: calc(16 * 0.2666vw);
+    --twenty: calc(20 * 0.2666vw);
+    --twentyFour: calc(24 * 0.2666vw);
+    --twentyFive: calc(25 * 0.2666vw);
+    --thirty: calc(30 * 0.2666vw);
+    --thirtyTwo: calc(32 * 0.2666vw);
+    --forty: calc(40 * 0.2666vw);
+    --fortyFive: calc(45 * 0.2666vw);
+    --sixty: calc(60 * 0.2666vw);
+    --eighty: calc(80 * 0.2666vw);
+    --eightyOne: calc(81 * 0.2666vw);;
+    --oneHundred: calc(100 * 0.2666vw);
+  }
+
+  /* ヘッダー */
+  header {
+    padding: 0;
+  }
+  section {
+    padding: var(--eighty) 0;
+  }
+
+  .hamburger-btn {
+    width: calc(82 * 0.2666vw);
+    height: calc(77 * 0.2666vw);
+    background-color: #fff;
+  }
+
+  .hamburger-btn span {
+    position: absolute;
+    left: 50%;
+    width: var(--thirtyTwo);
+    transform: translateX(-50%);
+  }
+
+  .hamburger-btn span:nth-of-type(1) {
+    top: 6vw;
+  }
+  
+  .hamburger-btn span:nth-of-type(2) {
+    top: 50%;
+  }
+  
+  .hamburger-btn span:nth-of-type(3) {
+    bottom: 5.5vw;
+  }
+
+  .header-menu {
+    width: calc(300 * 0.266vw);
+  }
+
+
+/* .kv */
+  .kv {
+    background-image: url(../img/kv-sp.jpg);
+    height: 228.2vw;
+  }
+
+  .kv::after {
+    content: none;
+  }
+
+  .kv h1 {
+    width: calc(188 * 0.266vw);
+    height: calc(188 * 0.266vw);
+    line-height: calc(188 * 0.266vw);
+    font-size: var(--twentyFive);
+  }
+
+  /* about  */
+  .about-container {
+    flex-wrap: wrap;
+    gap: var(--forty) 0;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-container img {
+    width: 100%;
+    height: calc(217 * 0.266vw);
+  }
+
+  /* gallery  */
+  .gallery-wrapper {
+    gap: var(--sixty) 0;
+  }
+
+  .gallery-content{
+    position: static;
+    width: 100%;
+    /* nth-of-typeにかかっているtopを一括できかなくする */
+  }
+
+  .gallery-content img {
+    width: 100%;
+    height: calc(235 * 0.266vw);
+  }
+
+  /* .modal */
+
+  .modal-content img {
+    width: 95vw;
+    height: 61vw;
+  }
+
+  .modal-btn {
+    right: 0;
+  }
+
+  /* blog  */
+
+  .swiper-slide img {
+    height: calc(226 * 0.266vw);
   }
 
 }

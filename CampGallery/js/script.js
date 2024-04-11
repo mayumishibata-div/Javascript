@@ -48,7 +48,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   // Slides per view
   // （スマホ用）
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   // ブレイクポイント650以上の時
